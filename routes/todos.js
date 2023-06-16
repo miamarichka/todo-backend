@@ -15,7 +15,7 @@ router.put('/:id', isValidId, validateBody(joiTodoSchema), controllers.updateTod
 
 router.patch('/:id/completed', isValidId, validateBody(updateCompletedSchema), controllers.updateTodoStatus);
 
-router.delete('/', isValidId, controllers.deleteById);
+router.delete('/:id', isValidId, controllers.deleteById);
 
 module.exports = router;
 

@@ -35,7 +35,7 @@ const addNewTodo = async (req, res) => {
 };
 
 const deleteById = async (req, res) => {
-  const { id } = req.params;
+    const { id } = req.params;
 
   const data = await Todo.findByIdAndDelete(id);
 

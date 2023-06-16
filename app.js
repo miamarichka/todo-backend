@@ -17,7 +17,6 @@ app.use(express.json());
 app.use('/api/todos', todosRouter);
 
 app.use((req, res) => {
-    console.log('here')
     res.status(404).json({message: 'Not found 404'})
 })
 
